@@ -374,7 +374,7 @@ class Jet_Listing_Dynamic_Image_Widget extends \Jet_Listing_Dynamic_Widget {
 				'mobile_default' => [
 					'unit' => '%',
 				],
-				'size_units' => jet_engine()->elementor_views->add_custom_size_unit( [ '%', 'px', 'vw' ] ),
+				'size_units' => jet_engine()->elementor_views->add_custom_size_unit( [ 'px', '%', 'em', 'rem', 'vw' ] ),
 				'range' => [
 					'%' => [
 						'min' => 1,
@@ -410,7 +410,7 @@ class Jet_Listing_Dynamic_Image_Widget extends \Jet_Listing_Dynamic_Widget {
 				'mobile_default' => [
 					'unit' => '%',
 				],
-				'size_units' => jet_engine()->elementor_views->add_custom_size_unit( [ '%', 'px', 'vw' ] ),
+				'size_units' => jet_engine()->elementor_views->add_custom_size_unit( [ 'px', '%', 'em', 'rem', 'vw' ] ),
 				'range' => [
 					'%' => [
 						'min' => 1,
@@ -446,7 +446,7 @@ class Jet_Listing_Dynamic_Image_Widget extends \Jet_Listing_Dynamic_Widget {
 				'mobile_default' => [
 					'unit' => 'px',
 				],
-				'size_units' => jet_engine()->elementor_views->add_custom_size_unit( [ 'px', 'vh' ] ),
+				'size_units' => jet_engine()->elementor_views->add_custom_size_unit( [ 'px', '%', 'em', 'rem', 'vh' ] ),
 				'range' => [
 					'px' => [
 						'min' => 1,
@@ -499,7 +499,7 @@ class Jet_Listing_Dynamic_Image_Widget extends \Jet_Listing_Dynamic_Widget {
 			[
 				'label'      => __( 'Border Radius', 'jet-engine' ),
 				'type'       => Controls_Manager::DIMENSIONS,
-				'size_units' => jet_engine()->elementor_views->add_custom_size_unit( [ 'px', '%' ] ),
+				'size_units' => jet_engine()->elementor_views->add_custom_size_unit( [ 'px', '%', 'em', 'rem' ] ),
 				'selectors'  => [
 					$this->css_selector( ' img' ) => 'border-radius: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
 				],
